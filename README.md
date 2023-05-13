@@ -1,6 +1,6 @@
 ________________________________________________________________________________________
 
-#                         Python Codes                              
+#                  Mathematical Modelling In Python                              
 ________________________________________________________________________________________
 - ### Requirements before running codes:
     - Install an IDE that compiles and runs C++ codes. Recommendation VS Code
