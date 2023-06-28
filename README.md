@@ -1,6 +1,6 @@
 ________________________________________________________________________________________
 
-#                         Python Codes                              
+#                  Mathematical Modelling In Python                              
 ________________________________________________________________________________________
 - ### Requirements before running codes:
     - Install an IDE that compiles and runs C++ codes. Recommendation VS Code
@@ -13,7 +13,7 @@ ________________________________________________________________________________
     - Tebogo Sello Selepe
     - Computer Sciences at Tuks
 ________________________________________________________________________________________
- ## For Introduction:
+## For Introduction:
     - Visit: https://www.youtube.com/watch?v=rfscVS0vtbw
     - Visit: https://www.youtube.com/watch?v=8ext9G7xspg
 ________________________________________________________________________________________
