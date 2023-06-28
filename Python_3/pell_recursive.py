@@ -5,6 +5,6 @@ def pell_recursive(n):
     elif n == 1:
         return 1
     else:
-        return 2*pell_recursive(n-1)+pell_recursive(n-2)
+        return 2 * pell_recursive(n - 1) + pell_recursive(n - 2)
 # Calling the Recursive function
 pell_recursive(20)
