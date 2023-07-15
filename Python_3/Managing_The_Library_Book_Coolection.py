@@ -96,7 +96,7 @@ def library_feedback(library_total_import = None, books_addded_import = None, bo
         books_addded = books_addded_import[index]
     if(books_removed_import != None):
         books_removed = books_removed_import[index]
-    # Generate the feedback of the library's book collection operations.
+    # Generate the feedback of the library's book collection operation
 
     string_3d = "There are currently " + str(library_total) + " books in the book collection. The following operations were performed: " + str(books_added) + " books were added to the collection and " + str(books_removed) + " books were removed"
     return library_total, books_added, books_removed, string_3d
@@ -107,7 +107,6 @@ def library_feedback(library_total_import = None, books_addded_import = None, bo
 
 # Imports
 import os, sys
-
 class HiddenPrints:
     def __enter__(self):
         self._original_stdout = sys.stdout
@@ -116,9 +115,8 @@ class HiddenPrints:
     def __exit__(self, exc_type, exc_val, exc_tb):
         sys.stdout.close()
         sys.stdout = self._original_stdout
-
 with HiddenPrints():
-    import a2023EMR201A01_Submission as s
+    print("This Implementation is Just for Python 3 Programming Language Practices")
 
 # Testing Code
 print(" Question 3: Library's Book Collection".center(80, "-"), "\n")
@@ -130,24 +128,24 @@ books_removed = 0
 library_total = 0
 
 print(" Add a Book ".center(40, "-"))
-response1d = s.add_book(books[0], authors[0])
+response1d = add_book(books[0], authors[0])
 print("\nIndex 0:\n", response1d)
-print(s.library_feedback())
-response2d = s.add_book(books[1], authors[1])
+print(library_feedback())
+response2d = add_book(books[1], authors[1])
 print("\nIndex 1:\n", response2d)
-print(s.library_feedback())
-response3d = s.add_book(books[2], authors[2])
+print(library_feedback())
+response3d = add_book(books[2], authors[2])
 print("\nIndex 0:\n", response3d)
-print(s.library_feedback())
+print(library_feedback())
 print()
 
-print("\nLibrary:", s.library, "\n")
+print("\nLibrary:", library, "\n")
 
 
 print(" Search for a Book ".center(40, "-"), "\n")
-response1e = s.search_book(books[0])
-response2e = s.search_book(books[2])
-response3e = s.search_book(books[3])
+response1e = search_book(books[0])
+response2e = search_book(books[2])
+response3e = search_book(books[3])
 print("Index 0:\n", response1e)
 print("Index 2:\n", response2e)
 print("Index 3:\n", response3e)
@@ -155,27 +153,28 @@ print()
 
 
 print(" Remove a Book ".center(40, "-"))
-response1f = s.remove_book(books[1])
+response1f = remove_book(books[1])
 print("\nRemove index 1:\n", response1f)
-print(s.library_feedback())
-response1g = s.remove_book(books[1])
+print(library_feedback())
+response1g = remove_book(books[1])
 print("\nRemove index 1:\n", response1g)
-print(s.library_feedback())
-response1h = s.remove_book(books[2])
+print(library_feedback())
+response1h = remove_book(books[2])
 print("\nRemove index 2:\n", response1h)
-print(s.library_feedback())
-response1i = s.remove_book(books[3])
+print(library_feedback())
+response1i = remove_book(books[3])
 print("\nRemove index 3:\n", response1i)
-print(s.library_feedback())
-response1j = s.remove_book(books[0])
+print(library_feedback())
+response1j = remove_book(books[0])
 print("\nRemove index 0:\n", response1j)
-print(s.library_feedback())
+print(library_feedback())
 
 
-print("\nLibrary:", s.library, "\n")
+print("\nLibrary:", library, "\n")
 
 print()
 
 print(" Search for a Book ".center(40, "-"))
-response1k = s.search_book(books[1])#,library)
+response1k = search_book(books[1])#,library)
 print(response1k)
+print("--------- DONE --------")
