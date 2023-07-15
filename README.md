@@ -42,18 +42,17 @@
   - ### `Usage`:
     - This provides a set of Python scripts and modules that you can import and utilize in your own projects. To get started, import the necessary modules into your Python scripts or interactive sessions. For example:
     - ```python
-        import math
-        import numpy as n
-        # Data Points for Linearisation.
-        The_Data_Points = [(1.37,4.02),(1.69,7.45),(2.36, 9.06),(2.85,12.27),(3.03,11.99),(3.39,12.2),(3.93,13.94),(4.83,15.4),(4.87,15.91)]
-        # X and Y Coordinates: (X: Y)
-        X_data,Y_data = zip(*TheDataPoints)
-        New_X_data = [math.log(j) for j in X_data]
-        result = math_toolkit.add(2, 3)
-        # Polyfit function for linear regression:
-        a,b = n.polyfit(New_X_data, Y_data, 1) # First Degree.
-        a = math.exp(ln_a)
-        print("Linearized Equation: ", a, "x + (", b, ")")  # Output
+        import os, sys
+        class HiddenPrints:
+            def __enter__(self):
+                self._original_stdout = sys.stdout
+                sys.stdout = open(os.devnull, 'w')
+        
+            def __exit__(self, exc_type, exc_val, exc_tb):
+                sys.stdout.close()
+                sys.stdout = self._original_stdout
+        with HiddenPrints():
+            print("This Implementation is Just for Python 3 Programming Language Practices")
       ```
 ---
 ---
