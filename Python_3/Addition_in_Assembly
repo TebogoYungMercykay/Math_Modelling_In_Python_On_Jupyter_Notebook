@@ -1,1 +1,22 @@
-# Addition in Assembly
+# Mimicking Addition in Assembly
+def add_assembly(a, b):
+    carry = 0
+    result = 0
+    # Mask fir 8-bit values
+    mask = 0xFF
+    # 8 iterations for 8-bit values
+    for i in range(8):
+        bit_a = (a >> i) & 1
+        bit_b = (b >> i) & 1 
+        # Mimicking the assembly ADD operation
+        temp_sum = bit_a ^ bit_b ^ carry
+        carry = (bit_a & bit_b) | (carry & (bit_a ^ bit_b))        
+        result |= (temp_sum << i)
+    
+    return result & mask
+
+num1 = int(input("Enter the first number: "))
+num2 = int(input("Enter the second number: "))
+
+result = add_assembly(num1, num2)
+print(f"The sum of {num1} and {num2} is: {result}")
