@@ -1,4 +1,5 @@
+Kernel Update:
 https://docs.microsoft.com/en-gb/windows/wsl/install-manual#step-4---download-the-linux-kernel-update-package
 
-Debugger VS Code
+Debugger VS Code:
 https://code.visualstudio.com/docs/editor/debugging#_launch-configurations
