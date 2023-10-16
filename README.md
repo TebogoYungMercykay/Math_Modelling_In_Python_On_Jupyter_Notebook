@@ -3,7 +3,7 @@
 - Welcome to the `Python Mathematics` repository! This repository contains a collection of Python `scripts`, `examples`, and `resources` to aid in `mathematical computations` and `analysis` using the Python programming language.
 - The Python Mathematics repo is designed to help individuals `interested` in mathematics to `leverage` the `power` of Python for `solving mathematical` problems, conducting numerical computations, and `exploring` mathematical concepts.
 
-  <img src="./Images/Math.png" alt="Mathematical Modelling" width="100%" height="400">
+    <img src="./Images/Math.png" alt="Mathematical Modelling" width="100%" height="400">
 
 - ## `Features`:
   - Basic mathematical operations and functions.
